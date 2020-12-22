@@ -1,6 +1,6 @@
 const Router = require('express').Router();
 const Joi = require('joi');
-const ResponseModels = require('../../../Utils/ResponseModels')
+const ResponseModels = require('../../../utils/ResponseModels')
 const LocationDAC = require('../../../data_access/location-dac');
 const geolib = require('geolib');
 

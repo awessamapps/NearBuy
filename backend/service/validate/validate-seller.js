@@ -1,6 +1,6 @@
 const Router = require('express').Router();
 const Joi = require('joi');
-const SimpleResponse = require('../../Utils/ResponseModels')
+const SimpleResponse = require('../../utils/ResponseModels')
 
 const schema = Joi.object({
 
