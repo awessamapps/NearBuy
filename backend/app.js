@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-//const apiV1Routes = require('./routes/api/v1');
+const apiV1Routes = require('./routes/api/v1');
 const Utils = require('./Utils');
 
 
@@ -16,7 +16,7 @@ app.use("/", (req, res, next)=>{
     next();
 });
 
-//app.use("/api/v1", apiV1Routes );
+app.use("/api/v1", apiV1Routes );
 
 app.get('/health', (req, res) => { res.send({success: true, messsage: "", data: { health: "alive"}}); });
 
