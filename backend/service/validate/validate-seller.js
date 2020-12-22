@@ -11,12 +11,8 @@ let sellers = ['seller1']
 
 Router.use('/', function(req,res, next){
 
-
-
     let authBody = {};
-
     authBody.auth = req.headers['authorization'];
-
 
    const {error : validationError } = schema.validate(authBody);
 
