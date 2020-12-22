@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const apiV1Routes = require('./routes/api/v1');
-const Utils = require('./Utils');
+const Utils = require('./utils');
 
 
 
